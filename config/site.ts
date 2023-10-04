@@ -1,24 +1,28 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Next.js + NextUI",
-	description: "Make beautiful websites regardless of your design experience.",
+	name: "Disguised Mari",
+	description: "Assisting you as you progress in the game by giving you recommendation and meta builds.",
 	navItems: [
 		{
 			label: "Home",
 			href: "/",
 		},
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Heroes",
+      href: "/heroes",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Equips",
+      href: "/equips",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Traits",
+      href: "/traits",
+    },
+    {
+      label: "Lineups",
+      href: "/lineups",
     },
     {
       label: "About",
@@ -64,6 +68,6 @@ export const siteConfig = {
 		twitter: "https://twitter.com/getnextui",
 		docs: "https://nextui.org",
 		discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev"
+    sponsor: "https://ko-fi.com/disguisedmari"
 	},
 };

@@ -5,20 +5,20 @@ import { Code } from "@nextui-org/code"
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import { DiscordIcon, GithubIcon, HeartFilledIcon } from "@/components/icons";
 
 export default function Home() {
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<div className="inline-block max-w-lg text-center justify-center">
-				<h1 className={title()}>Make&nbsp;</h1>
-				<h1 className={title({ color: "violet" })}>beautiful&nbsp;</h1>
+			<div className="inline-block text-center justify-center">
+				<h1 className={title()}>Time to add&nbsp;</h1>
+				<h1 className={title({ color: "violet" })}>Disguised Mari&nbsp;</h1>
 				<br />
 				<h1 className={title()}>
-					websites regardless of your design experience.
+					to your server.
 				</h1>
 				<h2 className={subtitle({ class: "mt-4" })}>
-					Beautiful, fast and modern React UI library.
+					Mari will assist you as you progress in the game by giving you recommendation and meta builds.
 				</h2>
 			</div>
 
@@ -26,19 +26,20 @@ export default function Home() {
 				<Link
 					isExternal
 					as={NextLink}
-					href={siteConfig.links.docs}
-					className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
+					href={siteConfig.links.discord}
+					className={buttonStyles({ variant: "flat", radius: "full" })}
 				>
-					Documentation
+					<DiscordIcon size={20} />
+					Add to Discord
 				</Link>
 				<Link
 					isExternal
 					as={NextLink}
 					className={buttonStyles({ variant: "bordered", radius: "full" })}
-					href={siteConfig.links.github}
+					href={siteConfig.links.sponsor}
 				>
-					<GithubIcon size={20} />
-					GitHub
+					<HeartFilledIcon size={20} />
+					Support Us
 				</Link>
 			</div>
 

@@ -38,7 +38,7 @@ export default function Home() {
 					className={buttonStyles({ variant: "bordered", radius: "full" })}
 					href={siteConfig.links.sponsor}
 				>
-					<HeartFilledIcon size={20} />
+					<HeartFilledIcon size={20} className="text-danger"/>
 					Support Us
 				</Link>
 			</div>

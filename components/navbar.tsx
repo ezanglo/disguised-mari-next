@@ -95,7 +95,7 @@ export const Navbar = () => {
 					<Button
             isExternal
 						as={Link}
-						className="text-sm font-bold text-default-600 bg-blue-600 rounded-full"
+						className="text-sm font-bold text-white bg-blue-600 rounded-full"
 						href={siteConfig.links.sponsor}
 						startContent={<DiscordIcon />}
 						variant="flat"
